@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <title>ボスいくよ</title>
+    <script language="javascript" type="text/javascript">
+        "use strict";
+		const reset = (target) => {
+			var checkboxes = document.getElementsByName(target);
+			for (var i = 0; i < checkboxes.length; i++) {
+				checkboxes[i].checked = false;
+			}
+		}
+    </script>
+</head>
+
+<body class="bg-light">
+    <div class="container py-5">
+        <h2 class="mb-4 text-center fw-bold">ボスいくよ</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white fw-semibold">
+                        装備&ON/OFF
+                        <button class="btn btn-outline-light btn-sm float-end" onclick="reset('gears');">リセット</button>
+                    </div>
+                    <ul class="list-group list-group-flush text-start">
+                        <li class="list-group-item"><label><input type="checkbox" name="gears" class="form-check-input me-2">ON/OFFスキル</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="gears" class="form-check-input me-2">ペット&ペット装備</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="gears" class="form-check-input me-2">装備プリセット</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="gears" class="form-check-input me-2">ファミプリセット</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="gears" class="form-check-input me-2">一撃必殺</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="gears" class="form-check-input me-2"><span class="badge bg-info text-dark ms-1">期間限定</span>イベント装備</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-success text-white fw-semibold">
+                        消費系
+                        <button class="btn btn-outline-light btn-sm float-end" onclick="reset('buffs');">リセット</button>
+                    </div>
+                    <ul class="list-group list-group-flush text-start">
+						<li class="list-group-item"><label><input type="checkbox" name="gears" class="form-check-input me-2">ユニオン赤&緑</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="buffs" class="form-check-input me-2">ギルドの祝福</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="buffs" class="form-check-input me-2">ウルス気象</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="buffs" class="form-check-input me-2">赤ポ&武器精錬</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="buffs" class="form-check-input me-2">りんご飴</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="buffs" class="form-check-input me-2">向上された10段階薬</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="buffs" class="form-check-input me-2">AMA20バフ</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="gears" class="form-check-input me-2"><span class="badge bg-warning text-dark ms-1">1個2m</span>セイラム&アレリア</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="buffs" class="form-check-input me-2"><span class="badge bg-success text-dark ms-1">CT5分</span>ノーブレススキル(ギルドスキル)</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="buffs" class="form-check-input me-2"><span class="badge bg-success text-dark ms-1">CT5分</span>コダマ/エコー系スキル</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="buffs" class="form-check-input me-2"><span class="badge bg-danger text-dark ms-1">コイン消費</span>チャンピオンの加護</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="buffs" class="form-check-input me-2"><span class="badge bg-dark text-light ms-1">1日1回</span>275椅子</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="buffs" class="form-check-input me-2"><span class="badge bg-dark text-light ms-1">1日1回</span>マイホーム</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="buffs" class="form-check-input me-2"><span class="badge bg-info text-dark ms-1">個数制限</span>MVPパワーバフ</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="buffs" class="form-check-input me-2"><span class="badge bg-info text-dark ms-1">期間限定</span>VIPバフ</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-warning text-dark fw-semibold">
+                        連戦
+                        <button class="btn btn-outline-dark btn-sm float-end" onclick="reset('skills');">リセット</button>
+                    </div>
+                    <ul class="list-group list-group-flush text-start">
+                        <li class="list-group-item"><label><input type="checkbox" name="skills" class="form-check-input me-2">消費継ぎ足し</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="skills" class="form-check-input me-2">装備プリセット</label></li>
+						<li class="list-group-item"><label><input type="checkbox" name="skills" class="form-check-input me-2">ファミプリセット</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="skills" class="form-check-input me-2">CT確認</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="skills" class="form-check-input me-2">PTメン点呼</label></li>
+                        <li class="list-group-item"><label><input type="checkbox" name="skills" class="form-check-input me-2">サクノ姫の祝福管理</label></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
